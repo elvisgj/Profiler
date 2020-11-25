@@ -1,0 +1,9 @@
+{
+    "editor.formatOnPaste": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.find.addExtraSpaceOnTop": false,
+    "javascript.format.enable": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "editor.formatOnSave": true
+}
