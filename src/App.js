@@ -5,8 +5,9 @@ import SignIn from "./SignIn";
 import UserHome from "./UserHome";
 import LoggedWrapper from "./LoggedWrapper";
 import { ProtectedRoute } from "./ProtectedRoute";
-import ProfileUser from "./ProfileUser";
+import AllUsers from "./AllUsers";
 import NavBar from "./Navbar";
+import SpecificUser from "./SpecificUser";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
             <Route path="/" exact component={SignIn} />
             <Route path="/login" component={LogIn} />
             <ProtectedRoute path="/home" component={UserHome} />
-            <ProtectedRoute path="/users" component={ProfileUser} />
+            <ProtectedRoute path="/users" exact component={AllUsers} />
+            <ProtectedRoute path="/users/:id" component={SpecificUser} />
           </LoggedWrapper>
         </div>
       </div>

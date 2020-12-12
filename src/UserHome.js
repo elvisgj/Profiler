@@ -43,13 +43,13 @@ function UserHome(props) {
       <div className="flex justify-center mt-16">
         <div className="grid grid-cols-1 border-2 md:grid md:grid-cols-2 border-blue-300 m-8 p-4 rounded">
           <div>Email:</div>
-          <div className="font-black mb-4">{data ? data.email : ""}</div>
+          <div className="font-black mb-4">{data.email}</div>
           <div>Account ID:</div>
-          <div className="font-black mb-4">{data ? data.id : ""}</div>
+          <div className="font-black mb-4">{data.id}</div>
           <div>Your account is created at:</div>
-          <div className="font-black mb-4">{data ? dateCreated : ""}</div>
+          <div className="font-black mb-4">{dateCreated}</div>
           <div>Last update:</div>
-          <div className="font-black mb-4">{data ? dateUpdated : ""}</div>
+          <div className="font-black mb-4">{dateUpdated}</div>
         </div>
       </div>
     </div>

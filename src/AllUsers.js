@@ -4,7 +4,7 @@ import { BASE_URL, USER_TOKEN_KEY } from "./keys";
 import LoadingAnimation from "./Loading";
 import UserDetails from "./UserDetails";
 
-function ProfileUser() {
+function AllUsers() {
   const token = JSON.parse(localStorage.getItem(USER_TOKEN_KEY));
   const access = token.access_token;
 
@@ -36,4 +36,4 @@ function ProfileUser() {
   );
 }
 
-export default ProfileUser;
+export default AllUsers;
